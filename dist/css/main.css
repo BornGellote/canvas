@@ -1,0 +1,668 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ---- base ---- */
+
+html,body{
+    width:100%;
+    height:100%;
+    background:#111;
+}
+
+html{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+    font:normal 75% Arial, Helvetica, sans-serif;
+    color: #333;
+    color: rgba(0,0,0,0.5);
+}
+
+/* Reset CSS
+ * --------------------------------------- */
+a{
+    text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+    font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+
+output {
+    color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+canvas{
+    display:block;
+}
+
+
+/* ---- stats.js ---- */
+.count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles{
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles{
+    border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-color: #b61924;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+.wrap{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    position: relative;
+}
+h1{
+    font-size: 6em;
+}
+p{
+    font-size: 2em;
+    color: #fff;;
+}
+.intro p{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+.section{
+    text-align:center;
+}
+#menu li {
+    display:inline-block;
+    margin: 10px;
+    color: #000;
+    background:#fff;
+    background: rgba(255,255,255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#menu li.active{
+    background:#666;
+    background: rgba(0,0,0, 0.5);
+    color: #fff;
+}
+#menu li a{
+    text-decoration:none;
+    color: #000;
+}
+#menu li.active a:hover{
+    color: #000;
+}
+#menu li:hover{
+    background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+    padding: 9px 18px;
+    display:block;
+}
+#menu li.active a{
+    color: #fff;
+}
+#menu{
+    position:fixed;
+    top:0;
+    left:0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin:0;
+}
+
+/* Style for our header texts
+	* --------------------------------------- */
+h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+}
+
+#section2 h1, rain {
+    position: absolute;
+    top: 45%;
+    margin: 0;
+    padding: 0;
+    left: 41%;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align:center;
+}
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+#section2,
+#section3,
+#section4,
+#section5,
+#section6 {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Defining each sectino background and styles
+* --------------------------------------- */
+#section0{
+    background-image: url(../img/bg1.jpg);
+}
+#section0 h1{
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+/*#section2{*/
+    /*background-image: url(../img/bg3.jpg);*/
+    /*padding: 6% 0 0 0;*/
+/*}*/
+#section3{
+    background-image: url(../img/bg4.jpg);
+    padding: 6% 0 0 0;
+}
+#section3 h1{
+    color: #000;
+}
+
+
+/*Adding background for the slides
+* --------------------------------------- */
+#slide1, #slide2, #slide3 {
+    background-image: url(../img/bg2.jpg);
+    padding: 1% 0 0 0 !important;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#myCanvas_four, #myCanvas_five, #myCanvas_sin, #myCanvas_bezie {
+    width: 200px;
+    height: 100px;
+    background-image: url(../img/setka.png);
+}
+
+#myCanvas_spirograf {
+    width: 600px;
+    height: 600px;
+}
+
+#slide2{
+    background-image: url(../img/bg5.jpg);
+}
+
+#slide3{
+    background-color:black;
+    background-image: unset;
+    padding: 0 0 0 0 !important;
+}
+#rain {
+     opacity:.8;
+}
+
+#slide4 {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    background: hsla(280, 95%, 5%, 1);
+}
+
+#slide8, #slide9,  #slide5, #slide6, #slide7, #slide7_1 {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQIW2NkwAT/GdHE/gP5jMiCYAGQIpggXAAmiCIAEgQAAE4FBbECyZcAAAAASUVORK5CYII=) #222;
+    padding: 1% 0px 0px;
+}
+
+#slide7_1 .paint {
+    width: 100%;
+    display: inline-block;
+    margin: 0px 10px 50px;
+}
+
+#slide9{
+    padding: 100px 0px 0px;
+}
+
+#slide9 h1{
+    margin: 0px 0px 60px;
+}
+
+#slide9 h1 a{
+    color: #fff;
+}
+
+#slide9 h1 a:hover {
+    color: #3071a9;
+    text-decoration: underline;
+}
+
+#slide9 .canvs {
+    margin: 60px 0px 0px !important;
+}
+
+#game_life {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border: 3px solid black;
+    margin: 40px;
+    background: #fff;
+}
+
+/* Canvas
+* --------------------------------------- */
+.canvs {
+    display: inline-block !important;
+    margin: 100px 0px 0px!important;
+    /*width: 40%!important;*/
+}
+
+.cnvs-el {
+    display: inline-block;
+    width: 70%;
+    height: auto;
+}
+
+.paint {
+    width: auto;
+    display: inline-block;
+    margin: 0px 10px;
+    /*height: 320px;*/
+}
+.text_paint {
+    position: absolute;
+    display: inline-block;
+    margin: 35px 0px 0px;
+}
+
+.text_paint input#color {
+    margin: -25px 0px 0px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 100%;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #2a6495;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+    background: #3071a9;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #367ebd;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+    color: #fff;
+}
+
+/* Demos Menu
+ * --------------------------------------- */
+#demosMenu{
+    position:fixed;
+    bottom: 10px;
+    right:10px;
+    z-index: 999;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}

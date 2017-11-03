@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Canvas Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+
+        <div id="fullpage">
+            <div class="section " id="section0"><h1>fullPage.js + Canvas + Particles.js</h1></div>
+            <div class="section" id="section1">
+                <div class="slide" id="slide1">
+                    <h1>Easy elements canvas</h1>
+                    <div class="cnvs-el">
+                        <div class="paint">
+                            <canvas id="myCanvas_one" class="canvs" width="200" height="100"  style="border: 1px solid #000000;background: #fff; "></canvas>
+                        </div>
+                        <div class="paint">
+                            <canvas id="myCanvas_one_line" class="canvs" width="200" height="100"  style="border: 1px solid #000000;background: #fff; "></canvas>
+                        </div>
+                        <div class="paint">
+                            <div class="text_paint">
+                                <lable><p>Please change color</p></lable>
+                                <input type="color" id="color">
+                            </div>
+                            <canvas id="myCanvas_one_anim" class="canvs" width="200" height="100"  style="border: 1px solid #000000;background: #fff; "></canvas>
+                        </div>
+                        <div class="paint">
+                            <canvas id="myCanvas_two" class="canvs" width="200" height="100" style="border: 1px solid #000000;background: #fff; "></canvas>
+                        </div>
+                        <div class="paint">
+                            <canvas id="myCanvas_three" class="canvs" width="200" height="100" style="border: 1px solid #000000;background: #fff; "></canvas>
+                        </div>
+                        <div class="paint">
+                            <canvas id="myCanvas_four" class="canvs" width="200" height="100" style="border: 1px solid #000000; "></canvas>
+                        </div>
+                        <div class="paint">
+                            <canvas id="myCanvas_five" class="canvs" width="200" height="100" style="border: 1px solid #000000; "></canvas>
+                        </div>
+                        <div class="paint">
+                            <canvas id="myCanvas_circle" class="canvs" width="200" height="100" style="border: 1px solid #000000; background: #fff;"></canvas>
+                        </div>
+                        <div class="paint">
+                            <canvas id="myCanvas_circle_two" class="canvs" width="200" height="100" style="border: 1px solid #000000; background: #fff;"></canvas>
+                        </div>
+                        <div class="paint">
+                            <canvas id="myCanvas_anim_bg" class="canvs" width="200" height="100" style="border: 1px solid #000000; background: #fff;"></canvas>
+                        </div>
+                        <div class="paint">
+                            <canvas id="myCanvas_sin" class="canvs" width="200" height="100" style="border: 1px solid #000000;"></canvas>
+                        </div>
+                        <div class="paint">
+                            <canvas id="myCanvas_bezie" class="canvs" width="200" height="100" style="border: 1px solid #000000;"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" id="slide2">
+                    <h1>Amination canvas</h1>
+                </div>
+                <div class="slide" id="slide3">
+                    <canvas id="rain"></canvas>
+                    <canvas id="bg"></canvas>
+                </div>
+                <div class="slide" id="slide4">
+                    <canvas id="beatf_noise"></canvas>
+                </div>
+                <div class="slide" id="slide5">
+                    <h1>Canvas game[Chess]</h1>
+                    <div class="paint">
+                        <canvas id="myCanvas_chess" class="canvs" style="border: 1px solid #000000;background: #fff;"></canvas>
+                    </div>
+                </div>
+                <div class="slide" id="slide6">
+                    <h1>Canvas game[Tanks]</h1>
+                    <div class="paint">
+                        <canvas id="myCanvas_tanks" class="canvs" style="border: 1px solid #000000;background: #fff;"></canvas>
+                    </div>
+                </div>
+                <div class="slide" id="slide7">
+                    <h1>Canvas game[Pong]</h1>
+                    <div class="paint">
+                        <canvas id="myCanvas_pong" class="canvs"></canvas>
+                    </div>
+                </div>
+                <div class="slide" id="slide7_1">
+                    <h1>Canvas game[Puzzle15]</h1>
+                    <div class="paint">
+                        <canvas id="myCanvas_puzzle15" class="canvs"></canvas>
+                    </div>
+                </div>
+                <div class="slide" id="slide8">
+                    <h1>Canvas game[life]</h1>
+                    <canvas id="game_life" width="300" height="300"></canvas>
+                    <p>Количество циклов: <span id="count">0</span></p>
+                    <button id="start" class="btn btn-info">Start</button>
+                    <button id="stop" class="btn btn-info">Stop</button>
+                    <button id="repeat" class="btn btn-info">Repeat</button>
+                </div>
+                <div class="slide" id="slide9">
+                    <div class="paint spirograf">
+                        <h1><a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D1%84_(%D0%B8%D0%B3%D1%80%D1%83%D1%88%D0%BA%D0%B0)" target="_blank">Spinogaf</a></h1>
+                        <div class="block_setting">
+                            <div class="col-xs-6">
+                                <lable><p>Please set big R</p></lable>
+                            </div>
+                            <div class="col-xs-6">
+                                <form onsubmit="return false" oninput="level_big_r.value = flevelbig_r.valueAsNumber">
+                                    <input name="flevelbig_r" id="big_r" type="range" min="10" max="300" value="150" step="10">
+                                    <output for="big_r" name="level_big_r">150</output>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="block_setting">
+                            <div class="col-xs-6">
+                                <lable><p>Please set small R</p></lable>
+                            </div>
+                            <div class="col-xs-6">
+                                <form onsubmit="return false" oninput="level_small_r.value = flevel_small_r.valueAsNumber">
+                                    <input name="flevel_small_r" id="small_r" type="range" min="10" max="200" value="90" step="10">
+                                    <output for="small_r" name="level_small_r">90</output>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="block_setting">
+                            <div class="col-xs-6">
+                                <lable><p>Please set d</p></lable>
+                            </div>
+                            <div class="col-xs-6">
+                                <form onsubmit="return false" oninput="level_d.value = flevel_d.valueAsNumber">
+                                    <input name="flevel_d" id="flying_d" type="range" min="10" max="100" value="80" step="10">
+                                    <output for="flying_d" name="level_d">80</output>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="block_setting">
+                            <button id="start_spin" class="btn btn-info">Start</button>
+                            <button id="clear_spin" class="btn btn-info">Clear</button>
+                        </div>
+                        <canvas id="myCanvas_spirograf" class="canvs" width="600" height="600" style="border: 1px solid #000000;background: #fff"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section2"><div id="particles-js"><h1>Particles.js</h1></div></div>
+            <div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+        </div>
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>-->
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/scrolloverflow.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/canvas.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
