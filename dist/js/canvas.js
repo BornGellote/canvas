@@ -856,9 +856,6 @@
                     map.addEventListener("click", clickFunc, false);
                 }
 
-
-
-
                 var Tile = function(){
                     this.i=0;
                     this.j=0;
@@ -886,7 +883,6 @@
                     }
                 }
 
-
                 function clickFunc(e){
 
                     for (var j = 0; j < 4; j++ ) {
@@ -902,8 +898,6 @@
 
 
                 }
-
-
 
                 // обработка клика на плику, перемещение плит
                 function move(e) {
@@ -974,11 +968,6 @@
                     }
                 }
 
-
-
-
-
-
                 function game_puzz(){
 
                     ctxMap.fillStyle="#CECECE";
@@ -990,7 +979,6 @@
                     setTiles();
 
                 }
-
 
                 function setRestartBtn() {
                     with (ctxMap){
@@ -1005,9 +993,6 @@
                         fillText("Restart", 44.7+5, 326.5+17);
                     }
                 }
-
-
-
 
                 function setCountMc(string) {
 
@@ -1027,11 +1012,6 @@
                         fillText(string, 192.55+25, 326.5+22);
                     }
                 }
-
-
-
-
-
 
                 function setTiles(){
 
@@ -1093,8 +1073,6 @@
                         flag = true;
                     }
                 }
-
-
 
                 CanvasRenderingContext2D.prototype.fillRoundedRect = fillRoundedRect;
                 /* x: Координата верхнего левого угла по горизонтали

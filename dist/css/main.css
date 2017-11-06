@@ -462,6 +462,11 @@ h1{
     height: 600px;
 }
 
+/*#sp_in{*/
+    /*width: 800px;*/
+    /*height: 600px;*/
+/*}*/
+
 #slide2{
     background-image: url(../img/bg5.jpg);
 }
@@ -482,7 +487,7 @@ h1{
     background: hsla(280, 95%, 5%, 1);
 }
 
-#slide8, #slide9,  #slide5, #slide6, #slide7, #slide7_1 {
+#slide8, #slide9,  #slide5, #slide6, #slide7, #slide7_1, #slide7_2 {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQIW2NkwAT/GdHE/gP5jMiCYAGQIpggXAAmiCIAEgQAAE4FBbECyZcAAAAASUVORK5CYII=) #222;
     padding: 1% 0px 0px;
 }
